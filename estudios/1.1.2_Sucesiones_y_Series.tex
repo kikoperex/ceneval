@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,provide=*]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{\textbf{\Large Ficha de Estudio 1.1.2: Sucesiones y Series}}
+\author{Tutor Gemini}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Seccion 1: El Panorama General (El "Porque")}
+
+\subsection*{1.1 Que es y por que importa?}
+Una sucesion es simplemente una lista de numeros en un orden especifico. Una serie es lo que obtienes cuando sumas los numeros de esa lista. ¿Por que importa? Porque el universo esta lleno de patrones. Entender sucesiones y series te permite predecir el futuro (financiero, fisico, etc.), entender el crecimiento de poblaciones, calcular el interes compuesto de una inversion o incluso entender como funcionan los algoritmos de compresion de datos.
+
+\subsection*{1.2 La Analogia Central: Los Pasos de una Escalera}
+Imagina una escalera. Cada peldano esta a la misma distancia del anterior. Esta es una \textbf{sucesion aritmetica}. Sabes que si estas en el peldano 5 y cada peldano mide 30 cm, el siguiente estara en 30 cm mas arriba. Puedes predecir facilmente la altura de cualquier peldano.
+
+Ahora imagina una escalera magica donde cada peldano es el doble de alto que el anterior. Esta es una \textbf{sucesion geometrica}. El crecimiento es explosivo. Este tipo de patron describe como se propaga un video viral o como crece una inversion con interes compuesto.
+
+---
+
+\section*{Seccion 2: Los Fundamentos (El "Que")}
+
+\subsection*{2.1 Anatomia de una Sucesion}
+Una sucesion es una lista de terminos, denotados como $a_n$, donde 'n' es la posicion del termino.
+$$ a_1, a_2, a_3, a_4, ..., a_n $$
+\begin{itemize}
+    \item $a_1$: El primer termino de la sucesion.
+    \item $n$: La posicion de un termino (siempre un entero positivo).
+    \item $a_n$: El termino en la posicion 'n'. Se le conoce como el termino general o n-esimo termino.
+    \item $d$: En sucesiones aritmeticas, es la \textbf{diferencia comun} entre terminos consecutivos.
+    \item $r$: En sucesiones geometricas, es la \textbf{razon comun} (el factor por el que se multiplica).
+\end{itemize}
+
+---
+
+\section*{Seccion 3: El Paso a Paso (El "Como")}
+
+\subsection*{3.1 Sucesiones Aritmeticas (La Escalera Normal)}
+Se caracterizan porque la diferencia ($d$) entre dos terminos consecutivos es siempre la misma.
+\textbf{Formula para el termino n-esimo:} Para encontrar cualquier termino sin tener que listar todos los anteriores.
+$$ a_n = a_1 + (n-1)d $$
+
+\textbf{Formula para la suma de los primeros n terminos (la serie aritmetica):}
+$$ S_n = \frac{n(a_1 + a_n)}{2} $$
+
+\textbf{Ejemplo Guiado:}
+Sucesion: 3, 7, 11, 15, ...
+$a_1 = 3$. La diferencia comun es $d = 7 - 3 = 4$.
+\begin{itemize}
+    \item \textbf{Encontrar el termino 10 ($a_{10}$):}
+    $a_{10} = 3 + (10-1) \cdot 4 = 3 + 9 \cdot 4 = 3 + 36 = 39$.
+    \item \textbf{Sumar los primeros 10 terminos ($S_{10}$):}
+    $S_{10} = \frac{10(3 + 39)}{2} = \frac{10(42)}{2} = \frac{420}{2} = 210$.
+\end{itemize}
+
+\subsection*{3.2 Sucesiones Geometricas (La Escalera Magica)}
+Se caracterizan porque cada termino se obtiene multiplicando el anterior por una razon comun ($r$).
+\textbf{Formula para el termino n-esimo:}
+$$ a_n = a_1 \cdot r^{n-1} $$
+
+\textbf{Formula para la suma de los primeros n terminos (la serie geometrica):}
+$$ S_n = \frac{a_1(r^n - 1)}{r - 1} $$
+
+\textbf{Ejemplo Guiado:}
+Sucesion: 2, 6, 18, 54, ...
+$a_1 = 2$. La razon comun es $r = 6 / 2 = 3$.
+\begin{itemize}
+    \item \textbf{Encontrar el termino 7 ($a_7$):}
+    $a_7 = 2 \cdot 3^{7-1} = 2 \cdot 3^6 = 2 \cdot 729 = 1458$.
+    \item \textbf{Sumar los primeros 7 terminos ($S_7$):}
+    $S_7 = \frac{2(3^7 - 1)}{3 - 1} = \frac{2(2187 - 1)}{2} = 2186$.
+\end{itemize}
+
+---
+
+\section*{Seccion 4: A Practicar!}
+
+\subsection*{Nivel 1: Calentamiento}
+\begin{enumerate}
+    \item ¿Es la sucesion 5, 10, 15, 20, ... aritmetica o geometrica? ¿Cual es su diferencia o razon comun?
+    \item ¿Es la sucesion 3, 9, 27, 81, ... aritmetica o geometrica? ¿Cual es su diferencia o razon comun?
+    \item Escribe los primeros 4 terminos de una sucesion aritmetica si $a_1 = 2$ y $d = 5$.
+    \item Escribe los primeros 4 terminos de una sucesion geometrica si $a_1 = 5$ y $r = 2$.
+\end{enumerate}
+
+\subsection*{Nivel 2: Integracion}
+\begin{enumerate}
+    \item Para la sucesion aritmetica 4, 11, 18, ..., encuentra el termino en la posicion 20.
+    \item Para la sucesion geometrica 1, 4, 16, ..., encuentra el termino en la posicion 8.
+    \item Encuentra la suma de los primeros 15 terminos de la sucesion aritmetica que empieza con 100, 95, 90, ...
+    \item Encuentra la suma de los primeros 6 terminos de la sucesion geometrica 10, 20, 40, ...
+\end{enumerate}
+
+\subsection*{Nivel 3: Desafio}
+\begin{enumerate}
+    \item El tercer termino de una sucesion aritmetica es 10 y el septimo termino es 26. Encuentra el primer termino ($a_1$) y la diferencia comun ($d$).
+    \item Una pelota de goma se deja caer desde una altura de 10 metros. Cada vez que rebota, alcanza el 80% de su altura anterior. ¿Cual es la altura que alcanza en el quinto rebote?
+    \item Una persona ahorra \$50 la primera semana, \$60 la segunda, \$70 la tercera, y asi sucesivamente. ¿Cuanto dinero habra ahorrado en total despues de un ano (52 semanas)?
+\end{enumerate}
+
+---
+
+\section*{Seccion 5: Resumen y Errores Comunes}
+
+\subsection*{5.1 Puntos Clave (Cheat Sheet)}
+\begin{itemize}
+    \item \textbf{Sucesion Aritmetica:} Se suma o resta una cantidad fija ($d$). Crecimiento lineal.
+    \item \textbf{Sucesion Geometrica:} Se multiplica o divide por una cantidad fija ($r$). Crecimiento exponencial.
+    \item \textbf{Serie:} Es la suma de los terminos de una sucesion.
+    \item Siempre identifica primero si es aritmetica o geometrica. De eso dependen las formulas a usar.
+\end{itemize}
+
+\subsection*{5.2 Cuidado! Errores Tipicos}
+\begin{itemize}
+    \item Confundir $n$ (la posicion) con $a_n$ (el valor en esa posicion).
+    \item En la formula aritmetica, olvidar el "(n-1)".
+    \item En la formula geometrica, calcular mal la potencia $r^{n-1}$. Usa la calculadora si es necesario.
+    \item Usar la formula de suma cuando te piden un solo termino, y viceversa.
+\end{itemize}
+
+\end{document}

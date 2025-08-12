@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,provide=*]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\title{\textbf{\Large Ficha de Estudio 1.1.3: Operaciones con Polinomios}}
+\author{Tutor Gemini}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Seccion 1: El Panorama General (El "Porque")}
+
+\subsection*{1.1 Que es y por que importa?}
+En lenguaje sencillo, un polinomio es como una receta de cocina matematica. Te permite mezclar ingredientes (numeros y letras) de una manera muy especifica para construir modelos de situaciones reales. Son la base para describir desde la trayectoria de un cohete hasta como crece una inversion en el banco o como se disenan las curvas suaves de un coche.
+
+\subsection*{1.2 La Analogia Central: Las Familias de Frutas}
+Imagina que tienes una caja con diferentes tipos de frutas: 3 manzanas, 5 platanos y 2 cerezas. Si te doy otras 2 manzanas y 3 platanos, al final tendras 5 manzanas y 8 platanos. Pero nunca podras "sumar" una manzana con un platano para obtener una "manzaplatano".
+
+En los polinomios, los \textbf{terminos semejantes} son como las frutas del mismo tipo. Un termino como $3x^2$ es de la "familia de las x al cuadrado", y solo puedes sumarlo o restarlo con otros terminos de esa misma familia, como $5x^2$ o $-x^2$.
+
+---
+
+\section*{Seccion 2: Los Fundamentos (El "Que")}
+
+\subsection*{2.1 Anatomia de un Polinomio}
+Vamos a diseccionar un ejemplo para entender sus partes:
+$$ 5x^3 + 2x^2 - 7x + 4 $$
+\begin{itemize}
+    \item \textbf{Terminos:} Son cada una de las piezas que se suman o restan. Aqui hay 4 terminos: $5x^3$, $2x^2$, $-7x$, y $4$.
+    \item \textbf{Coeficiente:} Es el numero que acompana a la letra. Los coeficientes son 5, 2, -7 y 4.
+    \item \textbf{Variable:} Es la letra, en este caso, la $x$.
+    \item \textbf{Exponente:} Es el numero pequeno de arriba. Nos dice a que "familia" pertenece el termino.
+    \item \textbf{Grado del Polinomio:} Es el exponente mas grande de todos. En este caso, el grado es 3.
+\end{itemize}
+
+---
+
+\section*{Seccion 3: El Paso a Paso (El "Como")}
+
+\subsection*{3.1 Suma y Resta: Juntando Familias}
+\textbf{La Regla de Oro:} Solo puedes combinar terminos de la misma familia (misma variable, mismo exponente).
+
+\textbf{Proceso para la Suma:} Sumar $(3x^2 - 5x + 2)$ y $(x^2 + 4x - 6)$.
+\begin{enumerate}
+    \item \textbf{Escribe los polinomios:} $(3x^2 - 5x + 2) + (x^2 + 4x - 6)$
+    \item \textbf{Agrupa por familias:} $(3x^2 + x^2) + (-5x + 4x) + (2 - 6)$
+    \item \textbf{Suma los coeficientes:} $(3+1)x^2 + (-5+4)x + (2-6) = 4x^2 - x - 4$
+\end{enumerate}
+
+\textbf{Proceso para la Resta:} Restar $(2x^2 - 8x + 3)$ de $(5x^2 - 3x + 1)$.
+\begin{enumerate}
+    \item \textbf{Paso Crucial! Alerta de Peligro:} El signo de resta cambia el signo de \textbf{TODOS} los terminos del segundo polinomio.
+    $(5x^2 - 3x + 1) - (2x^2 - 8x + 3)$ se convierte en $5x^2 - 3x + 1 - 2x^2 + 8x - 3$.
+    \item \textbf{Ahora, procede como una suma normal:} Agrupa familias.
+    $(5x^2 - 2x^2) + (-3x + 8x) + (1 - 3) = 3x^2 + 5x - 2$
+\end{enumerate}
+
+\subsection*{3.2 Multiplicacion: Todos contra Todos}
+\textbf{La Regla de Oro:} Cada termino del primer polinomio multiplica a cada termino del segundo.
+\textbf{Recordatorio de Exponentes:} $x^a \cdot x^b = x^{a+b}$ (los exponentes se suman).
+
+\textbf{Proceso:} Multiplicar $(2x - 3)$ por $(x^2 + 4x - 1)$.
+\begin{enumerate}
+    \item \textbf{El $2x$ multiplica a todos:} $2x(x^2 + 4x - 1) = 2x^3 + 8x^2 - 2x$
+    \item \textbf{El $-3$ multiplica a todos:} $-3(x^2 + 4x - 1) = -3x^2 - 12x + 3$
+    \item \textbf{Combina y simplifica:} $(2x^3 + 8x^2 - 2x) + (-3x^2 - 12x + 3) = 2x^3 + 5x^2 - 14x + 3$
+\end{enumerate}
+
+\subsection*{3.3 Division: El Proceso Inverso}
+La division es la operacion mas compleja, pero entenderla te da un poder enorme para simplificar y resolver problemas.
+
+\textbf{Metodo 1: Division Larga (El Metodo Universal)}
+Es muy similar a la division de numeros que aprendiste en primaria.
+\textbf{Proceso:} Dividir $(x^2 + 5x + 6)$ entre $(x + 2)$.
+\begin{enumerate}
+    \item \textbf{Divide el primer termino del dividendo por el primer termino del divisor:} $x^2 / x = x$. Este es el primer termino de tu respuesta.
+    \item \textbf{Multiplica este resultado por todo el divisor:} $x(x+2) = x^2 + 2x$.
+    \item \textbf{Resta este resultado del dividendo original:} $(x^2 + 5x + 6) - (x^2 + 2x) = 3x + 6$.
+    \item \textbf{Baja el siguiente termino y repite:} Ahora nuestro nuevo dividendo es $3x+6$. Repetimos el paso 1: $3x / x = 3$. Este es el segundo termino de tu respuesta.
+    \item \textbf{Multiplica y resta de nuevo:} $3(x+2) = 3x+6$. Al restar $(3x+6) - (3x+6) = 0$.
+\end{enumerate}
+El residuo es 0. El resultado (cociente) es $x+3$.
+
+\textbf{Metodo 2: Division Sintetica (El Atajo Inteligente)}
+Este metodo es un truco super rapido, pero \textbf{solo funciona cuando divides por un binomio de la forma $(x-c)$}.
+
+\textbf{Proceso:} Dividir $(x^2 + 5x + 6)$ entre $(x + 2)$.
+\begin{enumerate}
+    \item \textbf{Prepara los coeficientes:} Escribe solo los coeficientes del dividendo: 1, 5, 6.
+    \item \textbf{Encuentra el valor de 'c':} Como dividimos por $(x+2)$, que es lo mismo que $(x - (-2))$, nuestro valor $c$ es $-2$. Pon este numero en una caja a la izquierda.
+    \item \textbf{Ejecuta el algoritmo:}
+    Baja el primer coeficiente (1).
+    Multiplica este numero por $c$: $1 \times -2 = -2$. Escribelo debajo del siguiente coeficiente (5).
+    Suma la columna: $5 + (-2) = 3$.
+    Multiplica este resultado por $c$: $3 \times -2 = -6$. Escribelo debajo del siguiente coeficiente (6).
+    Suma la columna: $6 + (-6) = 0$. Este ultimo numero es el residuo.
+    \item \textbf{Interpreta el resultado:} Los numeros que obtuviste (1 y 3) son los coeficientes de tu respuesta, que tendra un grado menos que el polinomio original. Como el original era de grado 2, la respuesta es de grado 1.
+\end{enumerate}
+El resultado es $1x + 3$, o simplemente $x+3$.
+
+---
+
+\section*{Seccion 4: A Practicar!}
+
+\subsection*{Nivel 1: Calentamiento (Mecanica Pura)}\begin{enumerate}
+    \item \textbf{Identifica el grado de los siguientes polinomios:}
+    \begin{itemize}
+        \item a) $7x^5 - x^2 + 3$
+        \item b) $15x - 8x^3 + 2$
+        \item c) $x^2y^3 - 4xy^2$
+    \end{itemize}
+    \item \textbf{Suma los siguientes polinomios:}
+    \begin{itemize}
+        \item a) $(x+5) + (2x-3)$
+        \item b) $(4x^2 - 3x + 1) + (x^2 + 5x - 2)$
+    \end{itemize}
+    \item \textbf{Resta los siguientes polinomios:}
+    \begin{itemize}
+        \item a) $(3x+7) - (x+2)$
+        \item b) $(5y^2 - y + 3) - (2y^2 + 3y + 1)$
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Nivel 2: Integracion (Combinando Pasos)}\begin{enumerate}
+    \item \textbf{Operaciones Combinadas:} Simplifica la expresion:
+    $(5a^2 - 3ab + 2b^2) - (4a^2 - ab - 3b^2) + (a^2 - 2ab - b^2)$
+    \item \textbf{Multiplicacion de Binomios:} Encuentra el producto de $(3x + 2)(x - 1)$.
+    \item \textbf{Multiplicacion de Polinomios:} Calcula $(x-4)(x^2 + 2x - 3)$.
+    \item \textbf{Division Larga:} Divide $(2x^3 - 5x^2 + 7x - 10)$ entre $(x-2)$.
+    \item \textbf{Division Sintetica:} Usa el atajo para dividir $(x^3 + 8x^2 + 11x - 20)$ entre $(x+5)$.
+\end{enumerate}
+
+\subsection*{Nivel 3: Desafio (Aplicaciones y Razonamiento)}\begin{enumerate}
+    \item \textbf{Problema Geometrico:} El perimetro de un triangulo es $15x^2 - 8x + 12$. Si dos de sus lados miden $(3x^2 + 2x - 1)$ y $(7x^2 - 5x + 4)$, encuentra el polinomio que representa la longitud del tercer lado.
+    \item \textbf{Problema de Area:} El area de un rectangulo esta dada por el polinomio $2x^2 + 7x + 6$. Si su ancho es $(x+2)$, encuentra el polinomio que representa su largo. (Pista: Area = Largo x Ancho, por lo tanto, Largo = Area / Ancho).
+    \item \textbf{Encontrar el Error:} Un estudiante simplifico la expresion $(10x - 5) - (3x - 7)$ y obtuvo como resultado $7x - 12$. Encuentra el error en su razonamiento y proporciona la respuesta correcta.
+\end{enumerate}
+
+---
+
+\section*{Seccion 5: Resumen y Errores Comunes}
+
+
+\subsection*{5.1 Puntos Clave (Cheat Sheet)}
+\begin{itemize}
+    \item \textbf{Suma/Resta:} Solo se pueden combinar terminos con la misma letra y el mismo exponente.
+    \item \textbf{Resta:} El error mas comun! El signo de menos cambia el signo de CADA termino que le sigue en el parentesis.
+    \item \textbf{Multiplicacion:} Todos los terminos de un polinomio multiplican a todos los del otro. Los exponentes se suman.
+\end{itemize}
+
+\subsection*{5.2 Cuidado! Errores Tipicos}
+\begin{itemize}
+    \item Olvidar cambiar el signo de los ultimos terminos en una resta.
+    \item Multiplicar los exponentes en lugar de sumarlos (ej: $x^2 \cdot x^3 = x^6$ es \textbf{incorrecto}).
+    \item Sumar terminos que no son de la misma "familia" (ej: $3x^2 + 2x = 5x^3$ es \textbf{incorrecto}).
+\end{itemize}
+
+\end{document}
