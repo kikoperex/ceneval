@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,provide=*]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\title{\textbf{\Large Evaluacion Practica 1.1.2: Sucesiones y Series}}
+\author{Tutor Gemini}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Instrucciones}
+Resuelve los siguientes ejercicios para poner a prueba tu dominio sobre sucesiones y series. Intenta resolverlos todos antes de consultar las soluciones al final del documento. El objetivo es que identifiques tus areas de oportunidad.
+
+\section*{Nivel 1: Calentamiento}
+\begin{enumerate}
+    \item Identifica si cada sucesion es aritmetica o geometrica y encuentra su diferencia o razon comun (d o r).
+    \begin{itemize}
+        \item a) 2, 6, 10, 14, ...
+        \item b) 2, 6, 18, 54, ...
+        \item c) 100, 50, 25, 12.5, ...
+        \item d) 15, 12, 9, 6, ...
+    \end{itemize}
+    \item Escribe los primeros cinco terminos de una sucesion aritmetica donde $a_1 = 7$ y $d = 4$.
+    \item Escribe los primeros cinco terminos de una sucesion geometrica donde $a_1 = 3$ y $r = 3$.
+\end{enumerate}
+
+\section*{Nivel 2: Integracion}
+\begin{enumerate}
+    \item En la sucesion aritmetica 5, 9, 13, 17, ..., ¿cual es el termino en la posicion 30? ($a_{30}$)
+    \item En la sucesion geometrica 4, 12, 36, ..., ¿cual es el termino en la posicion 9? ($a_9$)
+    \item Encuentra la suma de los primeros 20 terminos de la sucesion aritmetica que empieza con 2, 7, 12, ... ($S_{20}$)
+    \item Encuentra la suma de los primeros 8 terminos de la sucesion geometrica 1, 5, 25, ... ($S_8$)
+    \item El primer termino de una sucesion aritmetica es 6 y el termino 21 es 106. Calcula la diferencia comun ($d$).
+\end{enumerate}
+
+\section*{Nivel 3: Desafio}
+\begin{enumerate}
+    \item Un teatro tiene 20 filas de asientos. La primera fila tiene 18 asientos, la segunda 20, la tercera 22, y asi sucesivamente. ¿Cuantos asientos hay en total en el teatro?
+    \item Depositas \$10,000 en una cuenta de inversion que genera un interes del 10% anual. Si no retiras nada, el interes se reinvierte (interes compuesto). ¿Cuanto dinero tendras en la cuenta despues de 5 anos?
+    \item El quinto termino de una sucesion geometrica es 48 y el octavo termino es 384. Encuentra el primer termino ($a_1$) y la razon comun ($r$).
+    \item Una empresa vende 1,500 unidades de un producto en su primer mes. La empresa espera aumentar las ventas en 150 unidades cada mes. ¿Cuantas unidades vendera en total durante su primer ano de operacion?
+\end{enumerate}
+
+\newpage
+
+\section*{Soluciones}
+
+\subsection*{Nivel 1}
+\begin{enumerate}
+    \item a) Aritmetica, $d=4$. b) Geometrica, $r=3$. c) Geometrica, $r=0.5$. d) Aritmetica, $d=-3$.
+    \item 7, 11, 15, 19, 23.
+    \item 3, 9, 27, 81, 243.
+\end{enumerate}
+
+\subsection*{Nivel 2}
+\begin{enumerate}
+    \item $a_{30} = a_1 + (n-1)d = 5 + (29)(4) = 5 + 116 = 121$.
+    \item $a_9 = a_1 \cdot r^{n-1} = 4 \cdot 3^8 = 4 \cdot 6561 = 26244$.
+    \item Primero, encontrar $a_{20} = 2 + (19)(5) = 97$. Luego, $S_{20} = \frac{20(2+97)}{2} = 10(99) = 990$.
+    \item $S_8 = \frac{a_1(r^8 - 1)}{r - 1} = \frac{1(5^8 - 1)}{5 - 1} = \frac{390625 - 1}{4} = \frac{390624}{4} = 97656$.
+    \item $a_{21} = a_1 + (20)d \implies 106 = 6 + 20d \implies 100 = 20d \implies d=5$.
+\end{enumerate}
+
+\subsection*{Nivel 3}
+\begin{enumerate}
+    \item Es una serie aritmetica con $a_1=18, d=2, n=20$. Primero, $a_{20} = 18 + (19)(2) = 18+38=56$. La suma total es $S_{20} = \frac{20(18+56)}{2} = 10(74) = 740$ asientos.
+    \item Es una sucesion geometrica. $a_1 = 10000, r=1.10$. Buscamos el termino al inicio del ano 6, que es $a_6$. $a_6 = 10000 \cdot (1.10)^{6-1} = 10000 \cdot (1.10)^5 \approx 10000 \cdot 1.61051 = 16105.1$. Tendra \$16,105.10.
+    \item Tenemos $a_5 = a_1 r^4 = 48$ y $a_8 = a_1 r^7 = 384$. Dividiendo las ecuaciones: $\frac{a_1 r^7}{a_1 r^4} = \frac{384}{48} \implies r^3 = 8 \implies r=2$. Sustituyendo en la primera ecuacion: $a_1 (2^4) = 48 \implies a_1 \cdot 16 = 48 \implies a_1=3$.
+    \item Es una serie aritmetica con $a_1=1500, d=150, n=12$. Primero, $a_{12} = 1500 + (11)(150) = 1500 + 1650 = 3150$. La suma total es $S_{12} = \frac{12(1500+3150)}{2} = 6(4650) = 27900$ unidades.
+\end{enumerate}
+
+\end{document}

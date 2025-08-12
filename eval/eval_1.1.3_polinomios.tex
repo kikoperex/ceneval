@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,provide=*]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\title{\textbf{\Large Evaluacion Practica 1.1.3: Operaciones con Polinomios}}
+\author{Tutor Gemini}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Instrucciones}
+Resuelve los siguientes ejercicios para poner a prueba tu dominio sobre las operaciones con polinomios. Intenta resolverlos todos antes de consultar las soluciones al final del documento.
+
+\section*{Nivel 1: Calentamiento}
+\begin{enumerate}
+    \item \textbf{Suma:} $(3x^2 - 5x + 1) + (x^2 + 2x - 6)$
+    \item \textbf{Suma:} $(a^2 - 3ab + b^2) + (4ab - a^2 + 2b^2)$
+    \item \textbf{Resta:} $(10y^3 - 4y^2 + 7y) - (5y^3 + 2y^2 - 3y)$
+    \item \textbf{Resta:} $(x+y+z) - (x-y+z)$
+    \item \textbf{Multiplicacion Simple:} $5x^2(3x - 2)$
+    \item \textbf{Multiplicacion de Binomios:} $(x+5)(x+2)$
+\end{enumerate}
+
+\section*{Nivel 2: Integracion}
+\begin{enumerate}
+    \item \textbf{Operacion Combinada:} Simplifica la expresion:
+    $(8a + 2b) - (3a - 4b) + (a - b)$
+    \item \textbf{Multiplicacion de Polinomios:} Encuentra el producto de $(2x - 3)(x^2 + 4x - 1)$.
+    \item \textbf{Resta Compleja:} De $15x^3 - 8x^2 + 4$ resta la suma de $(x^3 + 3x^2)$ con $(2x^3 - x^2 + x)$.
+    \item \textbf{Division Larga:} Divide $(x^3 - 7x^2 + 14x - 8)$ entre $(x - 4)$.
+    \item \textbf{Division Sintetica:} Usa el atajo para dividir $(2x^3 + 7x^2 - 5)$ entre $(x + 3)$.
+\end{enumerate}
+
+\section*{Nivel 3: Desafio}
+\begin{enumerate}
+    \item \textbf{Problema Geometrico 1:} El area de un rectangulo es $8x^2 + 6x - 5$. Si su largo es $(4x+5)$, ¿cual es su ancho?
+    \item \textbf{Problema Geometrico 2:} Encuentra el polinomio que representa el area de un cuadrado cuyo lado mide $(3x - 2)$.
+    \item \textbf{Problema de Logica:} ¿Que polinomio debes sumar a $(5x^2 - 3x + 8)$ para obtener como resultado $(x^2 + x - 1)$? 
+    \item \textbf{Problema de Simplificacion:} Un lado de un triangulo mide $(2x+y)$, el segundo lado mide $(3x-2y)$ y el perimetro total es $(7x+3y)$. Encuentra la longitud del tercer lado.
+\end{enumerate}
+
+\newpage
+
+\section*{Soluciones}
+
+\subsection*{Nivel 1}
+\begin{enumerate}
+    \item $4x^2 - 3x - 5$
+    \item $ab + 3b^2$
+    \item $5y^3 - 6y^2 + 10y$
+    \item $2y$
+    \item $15x^3 - 10x^2$
+    \item $x^2 + 7x + 10$
+\end{enumerate}
+
+\subsection*{Nivel 2}
+\begin{enumerate}
+    \item $(8a + 2b - 3a + 4b + a - b) = (8a-3a+a) + (2b+4b-b) = 6a + 5b$.
+    \item $2x(x^2+4x-1) -3(x^2+4x-1) = (2x^3+8x^2-2x) - (3x^2+12x-3) = 2x^3+5x^2-14x+3$.
+    \item Primero, la suma: $(x^3+3x^2) + (2x^3-x^2+x) = 3x^3+2x^2+x$. Luego, la resta: $(15x^3-8x^2+4) - (3x^3+2x^2+x) = 15x^3-8x^2+4 - 3x^3-2x^2-x = 12x^3-10x^2-x+4$.
+    \item El cociente es $x^2 - 3x + 2$.
+    \item Usando $c=-3$ con los coeficientes 2, 7, 0, -5. El resultado es $2x^2 + x - 3$ con un residuo de 4.
+\end{enumerate}
+
+\subsection*{Nivel 3}
+\begin{enumerate}
+    \item Dividiendo $(8x^2 + 6x - 5)$ entre $(4x+5)$. El resultado es $(2x-1)$. El ancho es $2x-1$.
+    \item Area = $(3x-2)^2 = (3x-2)(3x-2) = 9x^2 - 6x - 6x + 4 = 9x^2 - 12x + 4$.
+    \item Sea P el polinomio buscado. $(5x^2 - 3x + 8) + P = (x^2 + x - 1)$. Entonces, $P = (x^2 + x - 1) - (5x^2 - 3x + 8) = x^2+x-1-5x^2+3x-8 = -4x^2+4x-9$.
+    \item Perimetro - Lado1 - Lado2 = Lado3. $(7x+3y) - (2x+y) - (3x-2y) = 7x+3y-2x-y-3x+2y = (7x-2x-3x) + (3y-y+2y) = 2x+4y$.
+\end{enumerate}
+
+\end{document}
